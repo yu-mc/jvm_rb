@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+
+require 'jvm_rb'
+
+options = JvmRb::CMD.parse!
+
+if options[:version]
+  puts "version #{JvmRb::VERSION}"
+elsif options[:help] || !options[:classpath]
+  puts options[:usage]
+else
+  JvmRb::Runner.start(options)
+end
