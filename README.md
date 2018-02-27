@@ -1,2 +1,2 @@
 # jvm_rb
-A toy JVM in Ruby
+A toy JVM in Ruby.
